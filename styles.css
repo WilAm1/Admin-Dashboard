@@ -1,0 +1,26 @@
+* {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  border: 1px red solid;
+}
+
+body {
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: grid;
+  grid-template: 1fr 4fr/ 1fr 4fr;
+}
+
+header {
+  grid-column: 2;
+  display: grid;
+}
+.sidebar {
+  grid-column: 1/2;
+  grid-row: 1/-1;
+}
+.main-content {
+  grid-column: 2;
+  grid-row: 2;
+}
