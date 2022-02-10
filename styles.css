@@ -15,10 +15,15 @@ body {
 header {
   grid-column: 2;
   display: grid;
+  padding: 10px 30px;
 }
 .sidebar {
   grid-column: 1/2;
   grid-row: 1/-1;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 50px;
+  padding: 10px 20px;
 }
 .main-content {
   grid-column: 2;
@@ -29,4 +34,52 @@ header {
 }
 .projects-section {
   grid-row: 1/-1;
+}
+
+/* Header Content */
+.upper-header {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.notification-wrapper {
+  display: flex;
+  gap: 1em;
+  justify-content: flex-end;
+}
+
+.lower-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.lower-header > * {
+  flex: 1;
+}
+.profile-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  grid-template-rows: 1fr 2fr;
+}
+
+.profile-wrapper img {
+  display: inline-block;
+  height: 80px;
+  width: 80px;
+  background-color: aqua;
+  grid-row: 1/-1;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+button {
+  border-radius: 10px;
+  background-color: blue;
+  color: white;
+  padding: 5px 30px;
+  height: 50px;
 }
