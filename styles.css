@@ -23,4 +23,10 @@ header {
 .main-content {
   grid-column: 2;
   grid-row: 2;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.projects-section {
+  grid-row: 1/-1;
 }
